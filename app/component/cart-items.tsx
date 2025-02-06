@@ -4,9 +4,14 @@ import Image from "next/image"
 import { Heart, Trash2 } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
+<<<<<<< HEAD
 import { useState } from "react"
 
 const initialCartItems = [
+=======
+
+const cartItems = [
+>>>>>>> d3e7d84a9fa289fa04e0612a414b8cedde468aac
   {
     id: 1,
     name: "Library Stool Chair",
@@ -28,6 +33,7 @@ const initialCartItems = [
 ]
 
 export function CartItems() {
+<<<<<<< HEAD
   const [cartItems, setCartItems] = useState(initialCartItems)
 
   const handleQuantityChange = (id: number, quantity: string) => {
@@ -46,6 +52,8 @@ export function CartItems() {
     setCartItems(cartItems.filter(item => item.id !== id))
   }
 
+=======
+>>>>>>> d3e7d84a9fa289fa04e0612a414b8cedde468aac
   return (
     <div className="space-y-6">
       {cartItems.map((item) => (
@@ -70,7 +78,11 @@ export function CartItems() {
               <div className="flex gap-4">
                 <div className="flex items-center gap-2">
                   <span className="text-sm">Size</span>
+<<<<<<< HEAD
                   <Select defaultValue={item.size} onValueChange={(value) => handleSizeChange(item.id, value)}>
+=======
+                  <Select defaultValue={item.size}>
+>>>>>>> d3e7d84a9fa289fa04e0612a414b8cedde468aac
                     <SelectTrigger className="w-20">
                       <SelectValue />
                     </SelectTrigger>
@@ -84,7 +96,11 @@ export function CartItems() {
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="text-sm">Quantity</span>
+<<<<<<< HEAD
                   <Select defaultValue={item.quantity.toString()} onValueChange={(value) => handleQuantityChange(item.id, value)}>
+=======
+                  <Select defaultValue={item.quantity.toString()}>
+>>>>>>> d3e7d84a9fa289fa04e0612a414b8cedde468aac
                     <SelectTrigger className="w-20">
                       <SelectValue />
                     </SelectTrigger>
@@ -102,7 +118,11 @@ export function CartItems() {
                 <Button variant="ghost" size="icon">
                   <Heart className="h-5 w-5" />
                 </Button>
+<<<<<<< HEAD
                 <Button variant="ghost" size="icon" onClick={() => handleRemoveItem(item.id)}>
+=======
+                <Button variant="ghost" size="icon">
+>>>>>>> d3e7d84a9fa289fa04e0612a414b8cedde468aac
                   <Trash2 className="h-5 w-5" />
                 </Button>
               </div>
@@ -112,4 +132,9 @@ export function CartItems() {
       ))}
     </div>
   )
+<<<<<<< HEAD
 }
+=======
+}
+
+>>>>>>> d3e7d84a9fa289fa04e0612a414b8cedde468aac

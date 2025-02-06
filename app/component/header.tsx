@@ -16,7 +16,11 @@ export function Header() {
     { title: "Home", href: "/" },
     { title: "Shop", href: "/shop" },
     { title: "Product", href: "/product" },
+<<<<<<< HEAD
     { title: "Contact", href: "/contact" },
+=======
+    { title: "Pages", href: "/pages" },
+>>>>>>> d3e7d84a9fa289fa04e0612a414b8cedde468aac
     { title: "About", href: "/about" },
   ]
 

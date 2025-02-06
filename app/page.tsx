@@ -12,6 +12,11 @@ export default function Home() {
       <Categories />
       
     </>
+<<<<<<< HEAD
   );
+=======
+    
+  )
+>>>>>>> d3e7d84a9fa289fa04e0612a414b8cedde468aac
 }
 
