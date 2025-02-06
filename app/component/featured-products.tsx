@@ -1,4 +1,5 @@
-import { ProductCard} from "./product-card"
+import { ProductCard } from "./product-card"
+
 export function FeaturedProducts() {
   const products = [
     {
@@ -38,4 +39,3 @@ export function FeaturedProducts() {
     </section>
   )
 }
-

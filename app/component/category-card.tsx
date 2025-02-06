@@ -1,11 +1,11 @@
-import Link from "next/link"
-import Image from "next/image"
+import Link from "next/link";
+import Image from "next/image";
 
 interface CategoryCardProps {
-  title: string
-  productCount: number
-  image: string
-  href: string
+  title: string;
+  productCount: number;
+  image: string;
+  href: string;
 }
 
 export function CategoryCard({ title, productCount, image, href }: CategoryCardProps) {
@@ -15,8 +15,8 @@ export function CategoryCard({ title, productCount, image, href }: CategoryCardP
         <Image
           src={image}
           alt={title}
-          layout="fill"
-          objectFit="cover"
+          fill
+          style={{ objectFit: "cover" }}
           className="transition-transform duration-300 group-hover:scale-105"
         />
         <div className="absolute inset-0 bg-black/40 p-4 flex flex-col justify-end">
@@ -25,6 +25,5 @@ export function CategoryCard({ title, productCount, image, href }: CategoryCardP
         </div>
       </div>
     </Link>
-  )
+  );
 }
-
